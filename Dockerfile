@@ -1,6 +1,10 @@
 # apache with php base image 
 FROM php:7.2-apache
 
+# Add APCu extension for caching
+RUN pecl install apcu \
+    && docker-php-ext-enable apcu
+
 # copy all contents to public html
 COPY . /var/www/html
 
