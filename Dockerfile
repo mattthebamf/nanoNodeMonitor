@@ -3,7 +3,7 @@ FROM php:7.2-apache
 
 # Add APC and APCu extensions for caching
 RUN pecl install apcu \
-    && pecl install apc
+    && pecl install apc \
     && docker-php-ext-enable apcu \
     && docker-php-ext-enable apc
 
