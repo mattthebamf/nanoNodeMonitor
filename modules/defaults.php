@@ -20,6 +20,10 @@ $themeChoice = 'light';
 // Banano Explorers:    'banano'
 $blockExplorer = 'nanocrawler';
 
+// Choice of widget
+// Options: 'qr', 'natricon', 'monkey'
+$widgetType = 'qr';
+
 // autorefresh interval for the status webpage in seconds
 $autoRefreshInSeconds = 5;
 
@@ -63,7 +67,7 @@ $nanoNodeRPCIP   = '[::1]';
 $nanoNodeRPCPort = '7076';
 
 // Account of this node
-$nanoNodeAccount = '';
+$nanoNodeAccount = NULL;
 
 // Donation account for maintaining this node
 $nanoDonationAccount = $nanoNodeAccount;
